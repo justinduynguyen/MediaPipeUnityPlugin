@@ -86,6 +86,7 @@ namespace Mediapipe.Unity
 
     protected override HandLandmarkListAnnotation InstantiateChild(bool isActive = true)
     {
+      Debug.Log("Adun");
       var annotation = base.InstantiateChild(isActive);
       annotation.SetLeftLandmarkColor(_leftLandmarkColor);
       annotation.SetRightLandmarkColor(_rightLandmarkColor);
