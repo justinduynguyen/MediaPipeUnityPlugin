@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/MediaPipeUnity/Samples/Scenes/Start Scene.unity
+    guid: f7b359c19e6ae2d208e5ca4608b7c0b8
+  - enabled: 1
     path: Assets/WhackAMole/_scene/PlayScene.unity
     guid: 780193f55284cf9448ad972a9f988353
   m_configObjects: {}
