@@ -5,11 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Global Resource
+  - SceneHorizontalBorder
+  - SceneVerticalBorder
+  - platform
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - GamePlay
   - Water
   - UI
   - 
