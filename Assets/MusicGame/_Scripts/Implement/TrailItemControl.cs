@@ -17,8 +17,8 @@ public class TrailItemControl : IExecuteAble, ITargetCheckAble
     _far = far;
     _near = near;
     _items = new List<Item>();
-    _intervalMinMax = new Vector2(1.5f, 3f);
-    _speed = 1f / 5f;
+    _intervalMinMax = new Vector2(0.75f, 1.5f);
+    _speed = 1f / 2f;
   }
   public void Execute()
   {

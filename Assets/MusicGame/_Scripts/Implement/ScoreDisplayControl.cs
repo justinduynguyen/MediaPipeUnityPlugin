@@ -4,14 +4,16 @@ using UnityEngine.UI;
 public class ScoreDisplayControl : IExecuteIntegerAble
 {
   private int _score;
-  private readonly Text _textCombo;
+  private readonly Text _resultScore, _playScore;
   public ScoreDisplayControl(Transform uiRoot)
   {
-    _textCombo = uiRoot.GetChild(5).GetChild(2).GetComponent<Text>();
+    _resultScore = uiRoot.GetChild(5).GetChild(2).GetComponent<Text>();
+    _playScore = uiRoot.GetChild(4).GetChild(3).GetChild(0).GetComponent<Text>();
   }
   public void Execute(int param)
   {
     _score = param;
-    _textCombo.text = _score.ToString();
+    _playScore.text = "Score: " + _score.ToString();
+    _resultScore.text = _score.ToString();
   }
 }

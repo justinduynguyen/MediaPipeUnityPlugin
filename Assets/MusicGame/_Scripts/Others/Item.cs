@@ -52,7 +52,7 @@ public class Item
   }
   public bool CheckInPlace()
   {
-    return _state >= 0.87f && _state <= 0.98f;
+    return _state >= 0.7f && _state <= 0.88f;
   }
   public bool CheckTarget(TargetCheck target)
   {
