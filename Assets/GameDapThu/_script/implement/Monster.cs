@@ -40,6 +40,8 @@ public class Monster : IExecutable
       }
       else if (_active <= 0.25f)
       {
+        LerpPosition(_active * 4f);
+        /*
         if (_fire.gameObject.activeSelf)
         {
           Debug.Log("Kaboom baby!!!");
@@ -48,6 +50,7 @@ public class Monster : IExecutable
           DeactivateMonster();
         }
         else { LerpPosition(_active * 4f); }
+        */
       }
       else
       {
@@ -101,8 +104,14 @@ public class Monster : IExecutable
       if (_active > 0.5f) { _active = 0.5f; }
       if (_fire.gameObject.activeSelf)
       {
+        /*
         _fire.gameObject.SetActive(false);
         Control.Instant.ShowParticle(ParticleType.bomb, _fire.transform.position);
+        */
+        Debug.Log("Kaboom baby!!!");
+        Control.Instant.ShowParticle(ParticleType.explosion, _monster.transform.position);
+        Control.Instant.LoseLife();
+        DeactivateMonster();
       }
       else { Control.Instant.ShowParticle(ParticleType.monster, _monster.transform.position); }
       _spriteCtrl.Execute(false);
