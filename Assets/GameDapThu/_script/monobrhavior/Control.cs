@@ -31,7 +31,7 @@ public class Control : MonoBehaviour
   }
   public void AddScore()
   {
-    point += 1;
+    point += 10;
     _scoreUI.Execute(point);
   }
   private void MinusLife()
